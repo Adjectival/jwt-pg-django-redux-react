@@ -1,4 +1,4 @@
-#auth-pg-django-react
+# jwt-pg-django-redux-react
 
 ## by [Adjectival](https://alexander-jacks.firebaseapp.com/#/)
 
