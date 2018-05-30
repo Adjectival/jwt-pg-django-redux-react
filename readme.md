@@ -2,10 +2,10 @@
 
 ## by [Adjectival](https://alexander-jacks.firebaseapp.com/#/)
 
-##:key: authentication: JSON Web Tokens (JWT)
-##:floppy_disk: PostgreSQL database
-##:pager: Django backend
-##:computer: React/Redux frontend, ES6 middleware
+### :key: authentication: JSON Web Tokens (JWT)
+### :floppy_disk: PostgreSQL database
+### :pager: Django backend
+### :computer: React/Redux frontend, ES6 middleware
 
 ## Setup Backend
 - ```cd backend/ ```
