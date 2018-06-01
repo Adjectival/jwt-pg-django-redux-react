@@ -6,12 +6,12 @@ import { Provider } from 'react-redux';
 
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import registerServiceWorker from './registerServiceWorker';
 import App from './App';
 import configureStore from './store';
+import registerServiceWorker from './registerServiceWorker';
 
 const history = createHistory();
-const store = configureStore();
+const store = configureStore(history);
 
 ReactDOM.render((
 	<Provider store={store}>

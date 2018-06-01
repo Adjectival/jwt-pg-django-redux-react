@@ -5,7 +5,7 @@
 ### :key: JSON Web Tokens (JWT)
 ### :floppy_disk: PostgreSQL database
 ### :pager: Django backend
-### :computer: React/Redux frontend + API & middleware
+### :computer: React/Redux frontend + middleware
 
 ## Setup Backend
 ### Build

@@ -16,7 +16,8 @@ export default (history) => {
       whitelist: ['auth'],
       transforms: [persistedFilter]
     },
-    rootReducer);
+    rootReducer
+  );
   const store = createStore(
     reducer, {},
     applyMiddleware(
@@ -24,5 +25,6 @@ export default (history) => {
       routerMiddleware(history))
   );
   persistStore(store);
+
   return store;
 }
