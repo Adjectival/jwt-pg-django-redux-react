@@ -1,10 +1,10 @@
-import storage from 'redux-persist/es/storage'
+import storage from 'redux-persist/es/storage';
 import { apiMiddleware } from 'redux-api-middleware';
-import { applyMiddleware, createStore } from 'redux'
-import { createFilter   } from 'redux-persist-transform-filter';
-import { persistReducer, persistStore } from 'redux-persist'
-import { routerMiddleware } from 'react-router-redux'
-import rootReducer from './reducers'
+import { applyMiddleware, createStore } from 'redux';
+import { createFilter } from 'redux-persist-transform-filter';
+import { persistReducer, persistStore } from 'redux-persist';
+import { routerMiddleware } from 'react-router-redux';
+import rootReducer from './reducers';
 
 export default (history) => {
   const persistedFilter = createFilter(
@@ -16,13 +16,13 @@ export default (history) => {
       whitelist: ['auth'],
       transforms: [persistedFilter]
     },
-    rootReducer)
+    rootReducer);
   const store = createStore(
     reducer, {},
     applyMiddleware(
       apiMiddleware, 
       routerMiddleware(history))
-  )
-  persistStore(store)
-  return store
+  );
+  persistStore(store);
+  return store;
 }
